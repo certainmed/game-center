@@ -1,0 +1,56 @@
+:root {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --bg-color: #f0f4f8;
+  --text-color: #2c3e50;
+
+  /* Pop Colors */
+  --pop-pink: #ff6b6b;
+  --pop-blue: #4ecdc4;
+  --pop-yellow: #ffe66d;
+  --pop-purple: #6c5ce7;
+  --pop-green: #2ecc71;
+  --pop-orange: #ff9f43;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
