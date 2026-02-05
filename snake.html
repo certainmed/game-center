@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <nav class="game-nav">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
+                Back
+            </a>
+            <h2 style="margin: 0; color: #2ecc71;">Snake</h2>
+        </nav>
+
+        <main class="game-container">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%;">
+
+                <!-- Controls -->
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <button class="btn-mode" data-mode="single" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="user" style="width: 18px; height: 18px;"></i> Single
+                    </button>
+                    <button class="btn-mode" data-mode="ai-vs-ai" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="users" style="width: 18px; height: 18px;"></i> AI vs AI
+                    </button>
+                    <button class="btn-mode" data-mode="human-vs-ai" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="cpu" style="width: 18px; height: 18px;"></i> Human vs AI
+                    </button>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem;">
+                   <button class="btn-diff" data-diff="easy" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Easy</button>
+                   <button class="btn-diff" data-diff="medium" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Medium</button>
+                   <button class="btn-diff" data-diff="hard" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Hard</button>
+                </div>
+
+                <div id="winner-msg" class="hidden" style="font-size: 1.5rem; font-weight: bold; animation: popIn 0.3s ease;">
+                </div>
+
+                <!-- Canvases -->
+                <div id="canvas-container" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                    <!-- Injected by JS -->
+                </div>
+
+                <button id="btn-start" style="margin-top: 1rem; background-color: #333; color: white; display: flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; font-size: 1.2rem;">
+                    <i data-lucide="play" style="width: 20px; height: 20px;"></i> Start Game
+                </button>
+
+            </div>
+        </main>
+    </div>
+    <script src="js/snake.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <nav class="game-nav">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
+                Back
+            </a>
+            <h2 style="margin: 0; color: #4ecdc4;">Memory Game</h2>
+        </nav>
+
+        <main class="game-container">
+            <div style="max-width: 600px; width: 100%;">
+
+                <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; align-items: center;">
+                    <div style="font-size: 1.2rem; font-weight: bold; color: #333;">
+                        Moves: <span id="moves-count" style="color: #4ecdc4;">0</span>
+                    </div>
+                    <button id="btn-restart" style="background-color: #333; color: white; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="refresh-cw" style="width: 18px; height: 18px;"></i> Restart
+                    </button>
+                </div>
+
+                <div id="win-message" class="hidden" style="text-align: center; margin-bottom: 2rem; padding: 1rem; background-color: #4ecdc4; color: white; border-radius: 10px;">
+                    <h2 style="margin: 0;">You Won! 🎉</h2>
+                    <p style="margin: 0;">It took you <span id="final-moves"></span> moves.</p>
+                </div>
+
+                <div id="memory-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; perspective: 1000px;">
+                    <!-- Cards injected by JS -->
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="js/memory.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
