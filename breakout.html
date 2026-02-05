@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Breaker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <nav class="game-nav">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
+                Back
+            </a>
+            <h2 style="margin: 0; color: #ff9f43;">Block Breaker</h2>
+        </nav>
+
+        <main class="game-container">
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+
+                <div style="margin-bottom: 1rem; display: flex; justify-content: space-between; width: 100%; max-width: 600px; align-items: center;">
+                    <div style="font-weight: bold;">
+                        Score: <span id="score" style="color: #ff9f43;">0</span> | Lives: <span id="lives">3</span>
+                    </div>
+
+                    <div style="display: flex; gap: 0.5rem;">
+                         <button class="btn-diff" data-diff="easy" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Easy</button>
+                         <button class="btn-diff" data-diff="normal" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Normal</button>
+                         <button class="btn-diff" data-diff="hard" style="padding: 0.2rem 0.5rem; font-size: 0.8rem;">Hard</button>
+                    </div>
+
+                    <button id="btn-reset" style="background-color: #333; color: white; display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem;">
+                        <i data-lucide="refresh-cw" style="width: 16px; height: 16px;"></i> Reset
+                    </button>
+                </div>
+
+                <div style="position: relative;">
+                    <canvas id="game-canvas" width="600" height="400" style="background-color: #f0f4f8; border: 4px solid #333; border-radius: 8px; cursor: none; max-width: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"></canvas>
+
+                    <div id="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: rgba(255,255,255,0.6); border-radius: 4px;">
+                        <h2 id="overlay-title" class="hidden" style="font-size: 2rem; margin-bottom: 1rem;"></h2>
+
+                        <button id="btn-start" style="font-size: 1.5rem; padding: 1rem 2rem; background-color: #ff9f43; color: white; display: flex; align-items: center; gap: 1rem;">
+                             <i data-lucide="play" style="width: 32px; height: 32px;"></i> Start
+                        </button>
+                    </div>
+                </div>
+
+                <p style="margin-top: 1rem; color: #666;">
+                    Move your mouse to control the paddle
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="js/breakout.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

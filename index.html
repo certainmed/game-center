@@ -1,13 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>game-center</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="root">
+        <div class="dashboard">
+            <header class="dashboard-header">
+                <h1 style="font-size: 3.5rem; font-weight: 900; color: #333; margin-bottom: 0.5rem; text-shadow: 3px 3px 0px rgba(0,0,0,0.1);">
+                    GAME <span style="color: #ff6b6b">CENTER</span>
+                </h1>
+                <p style="font-size: 1.2rem; color: #666;">Choose your challenge!</p>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Tic Tac Toe -->
+                <a href="tictactoe.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #ff6b6b; border-color: #ff6b6b;">
+                        <div class="game-card-icon" style="background-color: #ff6b6b;">
+                            <i data-lucide="hash" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Tic Tac Toe</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Classic X and O strategy game</p>
+                    </div>
+                </a>
+
+                <!-- Memory -->
+                <a href="memory.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #4ecdc4; border-color: #4ecdc4;">
+                        <div class="game-card-icon" style="background-color: #4ecdc4;">
+                            <i data-lucide="brain" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Memory</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Test your brain power</p>
+                    </div>
+                </a>
+
+                <!-- 2048 -->
+                <a href="2048.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #ffe66d; border-color: #ffe66d;">
+                        <div class="game-card-icon" style="background-color: #ffe66d;">
+                            <i data-lucide="grid-3x3" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">2048</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Join the numbers!</p>
+                    </div>
+                </a>
+
+                <!-- Flow Free -->
+                <a href="flow.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #6c5ce7; border-color: #6c5ce7;">
+                        <div class="game-card-icon" style="background-color: #6c5ce7;">
+                            <i data-lucide="route" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Flow Free</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Connect matching colors</p>
+                    </div>
+                </a>
+
+                <!-- Block Breaker -->
+                <a href="breakout.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #ff9f43; border-color: #ff9f43;">
+                        <div class="game-card-icon" style="background-color: #ff9f43;">
+                            <i data-lucide="brick-wall" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Block Breaker</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Smash the bricks</p>
+                    </div>
+                </a>
+
+                <!-- Snake -->
+                <a href="snake.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #2ecc71; border-color: #2ecc71;">
+                        <div class="game-card-icon" style="background-color: #2ecc71;">
+                            <i data-lucide="activity" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Snake</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Eat and grow longer</p>
+                    </div>
+                </a>
+
+                <!-- Pacman -->
+                <a href="pacman.html" class="game-card-link">
+                    <div class="game-card" style="box-shadow: 0 10px 0 #eb4d4b; border-color: #eb4d4b;">
+                        <div class="game-card-icon" style="background-color: #eb4d4b;">
+                            <i data-lucide="ghost" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h2 style="margin: 0; fontSize: 1.5rem; color: #333;">Pacman</h2>
+                        <p style="margin: 0; color: #666; fontSize: 0.9rem;">Waka waka waka</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
 </html>

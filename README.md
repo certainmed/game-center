@@ -1,16 +1,24 @@
-# React + Vite
+# Game Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of classic mini-games built with plain HTML, CSS, and JavaScript.
 
-Currently, two official plugins are available:
+## Games Included
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  **Tic Tac Toe**: Classic X and O strategy game with PvP and PvE modes.
+2.  **Memory**: Test your brain power by matching emoji pairs.
+3.  **2048**: Join the numbers to reach the 2048 tile (Endless mode supported).
+4.  **Flow Free**: Connect matching colors with pipes to fill the grid.
+5.  **Block Breaker**: Smash the bricks with a paddle and ball.
+6.  **Snake**: Eat and grow longer (Single, AI vs AI, and Human vs AI modes).
+7.  **Pacman**: Navigate the maze, eat pellets, and avoid ghosts.
 
-## React Compiler
+## How to Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Simply open `index.html` in your web browser. No build step or server required (though a local server is recommended for best performance).
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   HTML5
+*   CSS3
+*   Vanilla JavaScript
+*   [Lucide Icons](https://lucide.dev/) (via CDN)

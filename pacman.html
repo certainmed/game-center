@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="game-wrapper">
+        <nav class="game-nav">
+            <a href="index.html" class="back-link">
+                <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
+                Back
+            </a>
+            <h2 style="margin: 0; color: #eb4d4b;">Pacman</h2>
+        </nav>
+
+        <main class="game-container">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+
+                <div style="display: flex; justify-content: space-between; width: 100%; max-width: 400px; margin-bottom: 1rem; font-weight: bold;">
+                    <div>Score: <span id="score" style="color: #eb4d4b;">0</span></div>
+                    <div>Lives: <span id="lives">3</span></div>
+                </div>
+
+                <div style="position: relative;">
+                    <canvas id="game-canvas" style="background-color: #1e272e; border: 4px solid #333; border-radius: 4px; box-shadow: 0 0 20px rgba(0,0,0,0.3);"></canvas>
+
+                    <div id="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                         <h2 id="overlay-title" class="hidden" style="font-size: 2rem; margin-bottom: 1rem;"></h2>
+
+                         <button id="btn-start" style="margin-top: 1rem; font-size: 1.2rem; padding: 1rem 2rem; background-color: #eb4d4b; color: white; display: flex; align-items: center; gap: 0.5rem;">
+                             <i data-lucide="play"></i> Start
+                         </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="js/pacman.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
